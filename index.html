@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +9,17 @@
     <title>Events</title>
 </head>
 <body>
-    <button onclick="">Clique aqui</button>
-    <button onmouseover="">Passe o mouse</button>
-    <input onblur="" type="text">
-    <input onchange="" type="text">
+    <form onsubmit="enviarForm(event)">
+        <h2>Formulário com event click</h2>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <input value="Enviar" type="submit"></input>
+    </form>
 </body>
 </html>

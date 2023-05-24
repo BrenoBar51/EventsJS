@@ -1,0 +1,5 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 18,
+    "diffEditor.wordWrap": "on"
+}
