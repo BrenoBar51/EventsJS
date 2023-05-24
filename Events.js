@@ -2,10 +2,13 @@ const email = document.getElementById('email')
 const password = document.querySelector('#password')
 
 function enviarForm(event) {
+    const dados = []
     event.preventDefault()
     for (let i = 0; i < event.target.length; i++){
         if(event.target[i].value){
             console.log(event.target[i].value)
+            dados.push(event.target[i].value)
+
         } else{
             console.log('Não tem valor')
         }
